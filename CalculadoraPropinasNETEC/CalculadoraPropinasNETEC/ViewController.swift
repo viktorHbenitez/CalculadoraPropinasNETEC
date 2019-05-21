@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         setDataPickerPercent()
         setUpPickerIntoTxf()
+        
     }
     
     func setUpPickerIntoTxf() {
@@ -98,7 +99,7 @@ class ViewController: UIViewController {
     var arrPercent = [String]()
     func setDataPickerPercent(){
         
-        arrPercent = ["10", "15", "20", "25", "30"]
+        arrPercent = ["10", "15", "20", "25", "30", "35", "40"]
         strPercentSelected = arrPercent[0]
         
     }
@@ -153,9 +154,7 @@ extension ViewController : UITextFieldDelegate{
         }else{
             bTxfSecond = true
         }
-        
-        
-        
+
         return true
     }
 }
