@@ -61,11 +61,6 @@ class ViewController: UIViewController {
         
         txfPercent.inputView = thePicker
         txfPercent.inputAccessoryView = toolBar
-        
-//        txfAmount.inputView = thePicker
-//        txfAmount.inputAccessoryView = toolBar
-//
-//        txfAmount.inputView = thePicker
         txfAmount.inputAccessoryView = toolBar
     }
     
@@ -145,7 +140,6 @@ extension ViewController : UITextFieldDelegate{
         if textField == txfPercent{
             strPercent = textField.text
             txfPercent.text = strPercentSelected
-            
         }
     }
     
